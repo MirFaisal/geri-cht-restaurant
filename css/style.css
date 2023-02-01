@@ -137,7 +137,7 @@ p {
   margin-right: 30px;
 }
 #header .navbar .navbar-nav .nav-item:last-child {
-  margin-right: 0Jpx;
+  margin-right: 0px;
 }
 #header .navbar .navbar-nav .nav-item .nav-link {
   color: var(--mf-primary-color);
@@ -154,6 +154,9 @@ p {
 }
 #header .navbar .call-to-action .nav-link {
   padding: 0 20px;
+}
+#header .navbar .call-to-action .nav-link:hover {
+  color: var(--mf-heighlight-color);
 }
 
 /* header */
