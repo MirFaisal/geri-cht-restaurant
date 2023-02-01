@@ -170,7 +170,7 @@ p {
   top: 50%;
   height: 161px;
   font-size: 18px;
-  writing-mode: vertical-lr;
+  writing-mode: sideways-lr;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
