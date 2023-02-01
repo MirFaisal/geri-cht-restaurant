@@ -14,8 +14,10 @@
 * {
   scroll-behavior: smooth;
   font-size: 18px;
-  background: #0c0c0c;
   color: #ffffff;
+}
+body {
+  background-color: #0c0c0c;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -52,7 +54,6 @@ p {
 }
 .btn-main {
   display: inline-block;
-  margin-top: 40px;
   padding: 8px 32px;
   font-family: var(--mf-brand-font);
   text-decoration: none;
@@ -73,7 +74,7 @@ p {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  left: -50%;
+  left: -40%;
   top: 110%;
   transform: translateX(50%);
 }
@@ -165,6 +166,9 @@ p {
 
 /* header */
 /* banner start */
+#banner {
+  padding-bottom: 48px;
+}
 #banner .hastags {
   position: absolute;
   top: 50%;
@@ -262,3 +266,120 @@ p {
   z-index: 99;
 }
 /* banner end */
+/* about start */
+#about {
+  background: url(../images/background/BG.png) no-repeat center;
+  background-size: cover;
+  padding: 334px 0;
+}
+#about .knive {
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+#about .alphabet {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#about .contain-wraper .about-us {
+  padding: 0;
+  position: relative;
+  z-index: 99;
+  width: 523px;
+  height: 292px;
+  text-align: right;
+}
+#about .contain-wraper .our-history {
+  width: 523px;
+  height: 292px;
+  position: relative;
+  z-index: 99;
+}
+#about .contain-wraper .about-us .hero-text,
+#about .contain-wraper .our-history .hero-text {
+  width: 100%;
+  height: 83px;
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-heighlight-color);
+}
+#about .contain-wraper .about-us p,
+#about .contain-wraper .our-history p {
+  margin: 32px 0;
+  width: 523px;
+  height: 84px;
+  font-family: var(--mf-primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: var(--mf-secondary-color);
+}
+/* about end */
+/* booking start */
+#booking {
+  margin: 152px 0;
+}
+#booking img {
+  top: -180px;
+  left: 90%;
+}
+#booking .contain-wraper {
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+}
+#booking .contain-wraper .main-form {
+  padding: 48px 32px;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid;
+  border-color: rgba(220, 202, 135, 0.2);
+}
+#booking .contain-wraper .main-form .intro-text p {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-primary-color);
+}
+#booking .contain-wraper .main-form .intro-text h2 {
+  margin-bottom: 64px;
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-heighlight-color);
+}
+#booking .contain-wraper .main-form form {
+  gap: 32px;
+  margin-bottom: 64px;
+}
+#booking .contain-wraper .main-form form .person {
+  width: 33%;
+  border-color: var(--mf-heighlight-color);
+  padding: 5px 5px;
+  font-family: var(--mf-brand-font);
+}
+#booking .contain-wraper .main-form form input {
+  width: 33%;
+  border-color: var(--mf-heighlight-color);
+  padding: 5px 5px;
+  font-family: var(--mf-brand-font);
+}
+/* booking end */
