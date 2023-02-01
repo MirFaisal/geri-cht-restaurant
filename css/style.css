@@ -63,6 +63,10 @@ p {
   color: #0c0c0c;
   background: var(--mf-heighlight-color);
 }
+.btn-main:hover {
+  border: 1px solid var(--mf-heighlight-color);
+  color: var(--mf-heighlight-color);
+}
 .slick-dots {
   width: 200px;
   background: transparent;
