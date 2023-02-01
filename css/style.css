@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/* Variables */
+:root {
+  --mf-primary-bg: #0c0c0c;
+  --mf-primary-color: #ffffff;
+  --mf-heighlight-color: #dcca87;
+  --mf-secondary-color: #aaaaaa;
+  /* font family */
+  --mf-brand-font: "Cormorant", serif;
+  --mf-primary-font: "Open Sans", sans-serif;
+}
+/* Variables */
+/* preset Stylrs */
+* {
+  scroll-behavior: smooth;
+  font-size: 18px;
+  background: #0c0c0c;
+  color: #ffffff;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+body::-webkit-scrollbar-track {
+  opacity: 0;
+}
+/* preset Stylrs */
+/* common css start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1860px !important;
+  padding: 0 120px;
+}
+.contain-wraper {
+  width: 1300px;
+  margin: auto;
+}
+.btn-main {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 8px 32px;
+  font-family: var(--mf-brand-font);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  color: #0c0c0c;
+  background: var(--mf-heighlight-color);
+}
+.slick-dots {
+  width: 200px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: -50%;
+  top: 110%;
+  transform: translateX(50%);
+}
+.slick-dots li button::before {
+  font-family: "slick";
+  font-size: 30px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  text-align: center;
+  opacity: 1;
+  color: var(--mf-heighlight-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots .slick-active #slick-slide-control00::before {
+  color: #ffffff;
+  content: "01";
+}
+.slick-dots .slick-active #slick-slide-control01::before {
+  color: #ffffff;
+  content: "02";
+}
+.slick-dots .slick-active #slick-slide-control02::before {
+  color: #ffffff;
+  content: "03";
+}
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02 {
+  font-size: 10px;
+}
+#slick-slide-control00::before {
+  content: "01";
+}
+#slick-slide-control01::before {
+  content: "02";
+}
+#slick-slide-control02::before {
+  content: "03";
+}
+
+/* common css end */
+/* header */
+#header {
+  padding-bottom: 48px;
+}
+#header .navbar {
+  background-color: var(--mf-primary-bg);
+}
+#header .navbar .navbar-brand {
+  padding: 12px 0 !important;
+  color: var(--mf-primary-color);
+  font-family: var(--mf-brand-font);
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#header .navbar .navbar-nav .nav-item {
+  margin-right: 30px;
+}
+#header .navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0Jpx;
+}
+#header .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--mf-primary-color);
+  font-family: var(--mf-primary-color);
+}
+#header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--mf-heighlight-color);
+  border-bottom: 1px solid;
+  border-color: var(--mf-heighlight-color);
+}
+#header .navbar .call-to-action {
+  color: var(--mf-primary-color);
+  font-family: var(--mf-primary-color);
+}
+#header .navbar .call-to-action .nav-link {
+  padding: 0 20px;
+}
+
+/* header */
+/* banner start */
+#banner .hastags {
+  position: absolute;
+  top: 50%;
+  height: 161px;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+#banner .scroll-sign {
+  width: 61px;
+  position: absolute;
+  top: 90%;
+  left: 93%;
+  transform: translate(-100%, -90%);
+}
+#banner .scroll-sign p {
+  color: var(--mf-heighlight-color);
+}
+
+#banner .scroll-sign .line {
+  width: 1px;
+  height: 50px;
+  background-color: var(--mf-heighlight-color);
+}
+#banner .contain-wraper .text {
+  text-align: left;
+}
+#banner .contain-wraper .text .intro-text {
+  font-family: var(--mf-brand-font);
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+#banner .contain-wraper .text img {
+  width: 40px;
+  padding-bottom: 8px;
+}
+#banner .contain-wraper .text .hero-text {
+  width: 453px;
+  margin-bottom: 32px;
+  font-family: var(--mf-brand-font);
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--mf-heighlight-color);
+}
+#banner .contain-wraper .text .info-text {
+  width: 453px;
+  height: 84px;
+  font-family: var(--mf-primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: var(--mf-secondary-color);
+}
+#banner .contain-wraper .showcase {
+  padding: 24px;
+}
+#banner .contain-wraper .showcase::after {
+  content: "";
+  position: absolute;
+  width: 435px;
+  height: 435px;
+  top: 300px;
+  left: 0;
+  background: var(--mf-heighlight-color);
+  z-index: 0;
+}
+#banner .contain-wraper .showcase::before {
+  content: "";
+  position: absolute;
+  width: 435px;
+  height: 435px;
+  top: 0;
+  left: 232px;
+  background: var(--mf-heighlight-color);
+  z-index: 1;
+}
+#banner .contain-wraper .showcase .banner-slide {
+  position: relative;
+  width: 619px;
+  height: 688px;
+  z-index: 99;
+}
+/* banner end */
