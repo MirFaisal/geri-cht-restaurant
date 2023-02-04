@@ -201,6 +201,35 @@
         </div>
       </div>
     </section>
+    <!-- food menu scetion start -->
+    <section id="food-menu" class="position-relative">
+      <div class="water-mark position-absolute">
+        <img src="./images/water-mark/badge.png" alt="" />
+      </div>
+      <div class="food-showcase d-flex" style="overflow: hidden">
+        <div class="mix Bar-Menu">
+          <img src="./images/food/glass-of-wain.png" alt="" />
+        </div>
+        <div class="mix Food-Menu">
+          <img src="./images/food/eggs-rectangle.png" alt="" />
+        </div>
+        <div class="mix Desserts-Menu">
+          <img src="./images/food/pasty.png" alt="" />
+        </div>
+      </div>
+      <div class="container position-absolute">
+        <div class="contain-wrapere">
+          <div
+            class="food-showcase-control d-flex flex-column justify-content-between"
+          >
+            <a role="button" data-filter=".Bar-Menu">Bar Menu</a>
+            <a role="button" data-filter=".Food-Menu"> Food Menu </a>
+            <a role="button" data-filter=".Desserts-Menu"> Desserts Menu </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- food menu scetion end -->
     <!-- booking  section end -->
     <!-- jquery cdn -->
     <script
@@ -226,5 +255,16 @@
     ></script>
     <script src="./js/slider.js"></script>
     <!-- sliks slider js -->
+    <!-- mix it up -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+      integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var mixer = mixitup(".food-showcase");
+    </script>
+    <!-- mix it up -->
   </body>
 </html>

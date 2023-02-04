@@ -383,3 +383,40 @@ p {
   font-family: var(--mf-brand-font);
 }
 /* booking end */
+#food-menu {
+  height: 900px;
+}
+#food-menu .water-mark {
+  top: -50px;
+  left: 132px;
+  z-index: 99;
+}
+#food-menu .food-showcase {
+  opacity: 0.4;
+}
+#food-menu .container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#food-menu .food-showcase-control {
+  width: 398px;
+  aspect-ratio: 1;
+}
+#food-menu .food-showcase-control a {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: var(--mf-primary-color);
+  text-decoration: none;
+}
+#food-menu .food-showcase-control .mixitup-control-active {
+  text-decoration: underline;
+}
