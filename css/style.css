@@ -384,6 +384,7 @@ p {
 }
 /* booking end */
 #food-menu {
+  width: 100%;
   height: 900px;
 }
 #food-menu .water-mark {
@@ -420,3 +421,185 @@ p {
 #food-menu .food-showcase-control .mixitup-control-active {
   text-decoration: underline;
 }
+/* food-menu end */
+/* todays-speciaal start */
+#todays-speciaal .container {
+  padding-block: 152px;
+}
+#todays-speciaal .intro-text {
+  padding-block-end: 64px;
+}
+#todays-speciaal .intro-text p {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--mf-primary-color);
+}
+#todays-speciaal .intro-text h2 {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--mf-heighlight-color);
+}
+#todays-speciaal .price-list h2 {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-primary-color);
+  padding-block-end: 48px;
+}
+#todays-speciaal .price-list ul {
+  height: 596px;
+}
+#todays-speciaal .price-list ul li {
+  list-style: none;
+}
+#todays-speciaal .price-list ul li .food-name-price {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #dcca87;
+}
+#todays-speciaal .price-list ul li .food-name-price::after {
+  position: absolute;
+  content: "";
+  top: 14.5px;
+  right: 69px;
+  width: 119px;
+  height: 1px;
+  background: #fafafa;
+}
+#todays-speciaal .price-list ul li .short-info {
+  font-family: var(--mf-primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--mf-secondary-color);
+}
+#todays-speciaal .contain-wraper .btn-main {
+  margin-block-start: 64px;
+}
+/* todays-speciaal end */
+/* chefs-eorld start*/
+#chefs-world {
+  padding-block: 128px;
+  background: url(../images/background/BG.png) no-repeat center;
+  background-position: cover;
+}
+#chefs-world .water-mark {
+  top: 103%;
+  right: 290px;
+}
+#chefs-world .contain-wraper .slider {
+  padding: 24px;
+  position: relative;
+  width: 586px;
+  object-fit: contain;
+  overflow: hidden;
+  z-index: 2;
+}
+#chefs-world .contain-wraper .slider::after {
+  position: absolute;
+  content: "";
+  width: 435px;
+  height: 435px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background: var(--mf-heighlight-color);
+}
+#chefs-world .contain-wraper .slider::before {
+  content: "";
+  position: absolute;
+  width: 435px;
+  height: 435px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: var(--mf-heighlight-color);
+}
+#chefs-world .contain-wraper .text p:nth-child(1) {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-primary-color);
+}
+#chefs-world .contain-wraper .text .info-text {
+  font-family: var(--mf-primary-font);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: var(--mf-secondary-color);
+}
+#chefs-world .contain-wraper .text h2 {
+  font-family: var(--mf-brand-font);
+  margin-bottom: 64px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-heighlight-color);
+}
+#chefs-world .contain-wraper .text .text-signature h3 {
+  margin-top: 64px;
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: var(--mf-heighlight-color);
+}
+#chefs-world .contain-wraper .text .text-signature p {
+  font-family: var(--mf-primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: var(--mf-secondary-color);
+  margin-bottom: 64px;
+}
+
+/* chefs-eorld end*/
