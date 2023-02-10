@@ -1,12 +1,12 @@
-$(".banner-slide").slick({
-  speed:50,
+$(".slide").slick({
+  speed: 50,
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 50,
   fade: true,
   autoplay: true,
   infinite: true,
-  arrows:false,
+  arrows: false,
   cssEase: "linear",
 });
 $(".chef-slider").slick({
