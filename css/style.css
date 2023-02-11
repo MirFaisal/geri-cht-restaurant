@@ -43,7 +43,6 @@
 body {
   background-color: var(--mf-color-page-bg);
   height: 100vh;
-  cursor: ;
 }
 h1,
 h2,
@@ -161,6 +160,10 @@ p {
   font-weight: 700;
   border-bottom: 1px solid;
   border-color: var(--mf-primary-color);
+}
+.container-fluid {
+  max-width: 1920px !important;
+  margin: auto !important;
 }
 /* slick slider style  end*/
 
@@ -332,6 +335,12 @@ p {
   background: url(../images/background/BG.png);
   padding-block: 120px;
 }
+#about .water-mark {
+  width: 150px;
+  aspect-ratio: 1;
+  top: 50px;
+  left: 50px;
+}
 #about .main {
   height: 700px;
   justify-content: space-between;
@@ -353,11 +362,12 @@ p {
 }
 #about .left .text img {
   transform: rotate(180deg);
+  z-index: 10;
 }
 #about .left .text .body-text,
 #about .right .text .body-text {
   position: relative;
-  width: 523px;
+  width: auto;
   padding-block: 32px !important;
   font-family: var(--mf-primary-font);
   font-style: normal;
@@ -376,3 +386,65 @@ p {
 }
 
 /* about section end */
+/* reservation style start */
+#reservation .main {
+  padding-block: 152px;
+}
+#reservation .main {
+  padding-block: 152px;
+}
+#reservation .main .text .intro-text {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: var(--mf-heading-line-hight);
+  letter-spacing: var(--mf-heading-letter-spacing);
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-color-text-white);
+}
+#reservation .main .text .hero-text {
+  font-family: var(--mf-brand-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--mf-heading2-font-size);
+  line-height: var(--mf-heading-line-hight);
+  letter-spacing: var(--mf-heading-letter-spacing);
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-primary-color);
+}
+#reservation .main .value {
+  padding-block: 64px;
+}
+#reservation .main .value .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reservation .main .value .person select,
+#reservation .main .value .time select,
+#reservation .main .value .date input {
+  padding-inline: 16px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid;
+  border-color: var(--mf-primary-light-color);
+  background: #0c0c0c;
+  color: var(--mf-primary-light-color);
+}
+#reservation .main .value .person select option,
+#reservation .main .value .time select option {
+  font-family: var(--mf-primary-font);
+  font-style: normal;
+  font-weight: var(--mf-heading2-font-weight);
+  font-size: var(--mf-body-font-size);
+  line-height: var(--mf-body-line-hight);
+  letter-spacing: var(--mf-body-letter-spacing);
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--mf-color-text-gray);
+}
+
+/* reservation style end */
