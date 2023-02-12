@@ -9,7 +9,17 @@ $(".slide").slick({
   arrows: false,
   cssEase: "linear",
 });
-$(".chef-slider").slick({
+$(".chefs-slide").slick({
+  speed: 50,
+  infinite: true,
+  speed: 50,
+  fade: true,
+  autoplay: true,
+  infinite: true,
+  cssEase: "linear",
+  arrows: false,
+});
+$(".testimony-slide").slick({
   speed: 50,
   infinite: true,
   speed: 500,
@@ -18,4 +28,5 @@ $(".chef-slider").slick({
   infinite: true,
   cssEase: "linear",
   arrows: false,
+  dots: true,
 });
