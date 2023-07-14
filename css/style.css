@@ -255,7 +255,7 @@ p {
   padding-block: 170px;
 }
 #banner .hastag {
-  writing-mode: sideways-lr;
+  writing-mode: vertical-rl;
   display: flex;
   gap: 40px;
   font-family: var(--mf-primary-font);
